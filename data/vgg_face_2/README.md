@@ -1,0 +1,2 @@
+# VGG FACE 2 DATASET
+The dataset consists of 2,622 identities. Each identity has an associated text file containing URLs for images and corresponding face detections. Please read the licence file carefully before downloading the data. Models pretrained using this data can be found at VGG Face Descriptor webpage. Please check the MatConvNet package release on that page for more details on Face detection and cropping.
