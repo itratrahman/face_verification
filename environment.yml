@@ -33,6 +33,7 @@ dependencies:
   - dbus=1.13.18=hb2f20db_0
   - decorator=4.4.2=py_0
   - defusedxml=0.6.0=py_0
+  - dlib=19.22.0=py38h5ef3938_0
   - entrypoints=0.3=py38_0
   - expat=2.2.10=he6710b0_2
   - ffmpeg=4.3.1=hca11adc_2
@@ -51,7 +52,6 @@ dependencies:
   - grpcio=1.37.0=py38hdd6454d_0
   - gst-plugins-base=1.18.4=h29181c9_0
   - gstreamer=1.18.4=h76c114f_0
-  - h5py=2.10.0=nompi_py38h9915d05_106
   - harfbuzz=2.8.0=h83ec7ef_1
   - hdf5=1.10.6=nompi_h7c3c948_1111
   - icu=68.1=h58526e2_0
@@ -82,7 +82,7 @@ dependencies:
   - libblas=3.9.0=1_h6e990d7_netlib
   - libcblas=3.9.0=3_h893e4fe_netlib
   - libclang=11.1.0=default_ha53f305_0
-  - libcurl=7.76.1=hc4aaa36_1
+  - libcurl=7.76.1=hc4aaa36_0
   - libedit=3.1.20191231=he28a2e2_2
   - libev=4.33=h516909a_1
   - libevent=2.1.10=hcdb4288_3
@@ -216,5 +216,12 @@ dependencies:
   - zipp=3.3.1=py_0
   - zlib=1.2.11=h7b6447c_3
   - zstd=1.4.9=ha95c52a_0
-prefix: /home/ssl/anaconda3/envs/face_verification
-
+  - pip:
+    - h5py==3.2.1
+    - keras==2.4.3
+    - keras-facenet==0.3.2
+    - mtcnn==0.1.0
+    - opencv-python==4.5.1.48
+    - progressbar2==3.53.1
+    - python-utils==2.5.6
+    - pyyaml==5.4.1
