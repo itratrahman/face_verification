@@ -86,8 +86,8 @@ def create_batch(batch_size, face_dir, face_list, dim = (160, 160)):
             photos2 = os.listdir(random_person_2_dir)
             photo1 = np.random.choice(photos1)
             photo2 = np.random.choice(photos2)
-            dir1= os.path.join(random_person_dir,photo1)
-            dir2= os.path.join(random_person_dir,photo2)
+            dir1= os.path.join(random_person_1_dir,photo1)
+            dir2= os.path.join(random_person_2_dir,photo2)
             try:
                 photo1 = face_detect(cv2.imread(dir1))
                 photo2 = face_detect(cv2.imread(dir2))
@@ -129,4 +129,4 @@ if __name__ == "__main__":
     np.save(os.path.join(NUMPY_DIR, "X2.npy"), X2)
     np.save(os.path.join(NUMPY_DIR, "y.npy"), y)
 
-    print("#################################################################################\n")
+    print("\n#################################################################################\n")
