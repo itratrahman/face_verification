@@ -159,3 +159,6 @@ checkpoint
 
 # numpy file
 *.npy
+
+# xml file
+*.xml
