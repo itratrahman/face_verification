@@ -1,6 +1,8 @@
 # FACE VERIFICATION
 Face verification is the task of comparing a candidate face to another, and verifying whether it is a match. It is a one-to-one mapping: you have to check if this person is the correct one. This project uses deep learning model for face verification. This project test performance of trained and pretrained model on benchmark data.
 
+![Face Verification Image](https://github.com/itratrahman/face_verification/blob/experimental/image/IMAGE.png?raw=true)
+
 ## 1. Folder Description
 - `data`- contains benchmark datasets each contained in designated folders.
 - `models`- contains pretrained model files
