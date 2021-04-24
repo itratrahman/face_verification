@@ -118,7 +118,6 @@ ENV/
 *.json
 
 # picture files
-*.png
 *.jpg
 *.tif
 *.jpeg
