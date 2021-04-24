@@ -145,6 +145,7 @@ word2vec_model
 *.zip
 *.tgz
 *.rar
+*.gz
 
 # machine learning model
 *.index
@@ -162,3 +163,6 @@ checkpoint
 
 # xml file
 *.xml
+
+# text files
+*.txt
