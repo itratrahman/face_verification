@@ -4,12 +4,17 @@ import cv2
 from tensorflow.keras.losses import CosineSimilarity
 from keras_facenet import FaceNet
 from fastapi import FastAPI, HTTPException, Query
+from pydantic import BaseModel
 from fastapi.responses import HTMLResponse
 from io import BytesIO
 import base64
 
 BASE_DIR = os.path.abspath(os.path.dirname("__file__"))
 HAARCASCADE_MODEL_PATH = os.path.join(BASE_DIR, "model_files", "haarcascade_frontalface_default.xml")
+
+class Item(BaseModel):
+    image_1: str
+    image_2: str
 
 app = FastAPI()
 
