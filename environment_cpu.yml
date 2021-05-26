@@ -22,10 +22,10 @@ dependencies:
   - brotlipy=0.7.0=py38h497a2fe_1001
   - bzip2=1.0.8=h7f98852_4
   - c-ares=1.17.1=h7f98852_1
-  - ca-certificates=2020.10.14=0
+  - ca-certificates=2020.12.5=ha878542_0
   - cachetools=4.2.1=pyhd8ed1ab_0
   - cairo=1.16.0=h6cf1ce9_1008
-  - certifi=2020.6.20=py38_0
+  - certifi=2020.12.5=py38h578d9bd_1
   - cffi=1.14.3=py38he30daa8_0
   - chardet=4.0.0=py38h578d9bd_1
   - click=7.1.2=pyh9f0ad1d_0
@@ -36,6 +36,7 @@ dependencies:
   - defusedxml=0.6.0=py_0
   - entrypoints=0.3=py38_0
   - expat=2.2.10=he6710b0_2
+  - fastapi=0.65.1=pyhd8ed1ab_0
   - ffmpeg=4.3.1=hca11adc_2
   - fontconfig=2.13.1=h6c09931_0
   - freetype=2.10.4=h5ab3b9f_0
@@ -153,6 +154,7 @@ dependencies:
   - pyasn1=0.4.8=py_0
   - pyasn1-modules=0.2.7=py_0
   - pycparser=2.20=py_2
+  - pydantic=1.8.2=py38h497a2fe_0
   - pygments=2.7.1=py_0
   - pyjwt=2.0.1=pyhd8ed1ab_1
   - pyopenssl=20.0.1=pyhd8ed1ab_0
@@ -180,6 +182,7 @@ dependencies:
   - sip=4.19.24=py38he6710b0_0
   - six=1.15.0=py_0
   - sqlite=3.35.4=hdfb4753_0
+  - starlette=0.14.2=pyhd8ed1ab_0
   - tensorboard=2.4.1=pyhd8ed1ab_0
   - tensorboard-plugin-wit=1.8.0=pyh44b312d_0
   - tensorflow=2.4.1=mkl_py38hb2083e0_0
@@ -217,6 +220,8 @@ dependencies:
   - zlib=1.2.11=h7b6447c_3
   - zstd=1.4.9=ha95c52a_0
   - pip:
+    - h11==0.12.0
+    - httptools==0.1.2
     - keras==2.4.3
     - keras-facenet==0.3.2
     - mtcnn==0.1.0
@@ -224,5 +229,9 @@ dependencies:
     - pyqt5-sip==4.19.18
     - pyqtchart==5.12
     - pyqtwebengine==5.12.1
+    - python-dotenv==0.17.1
     - pyyaml==5.4.1
-prefix: /home/ssl/anaconda3/envs/face_verification
+    - uvicorn==0.13.4
+    - uvloop==0.15.2
+    - watchgod==0.7
+    - websockets==8.1
