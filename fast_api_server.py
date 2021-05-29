@@ -110,14 +110,14 @@ def predict(data : request_body):
         response["face_2"] = "could not detect a single face in image 2"
 
     if (type(face_1) is np.ndarray) and (type(face_2) is np.ndarray):
+
         face_1 = face_1[np.newaxis,:,:,:]
         face_2 = face_2[np.newaxis,:,:,:]
         face_1_embed = l2_normalize(embedder.embeddings(face_1))[0]
         face_2_embed = l2_normalize(embedder.embeddings(face_2))[0]
-        print(face_1_embed.shape)
-        print(face_2_embed.shape)
+
         loss = cosine_loss([face_1_embed], [face_2_embed])
-        # loss = loss[0][0]
+
         if loss<=-0.363564:
             pred = 1
         else:
