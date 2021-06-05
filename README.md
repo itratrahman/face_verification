@@ -9,7 +9,7 @@ Face verification is the task of comparing a candidate face to another, and veri
 - `image` - contains static image for the readme
 
 ## 2. Installation Procedure
-This project is run on ubuntu using python 3. Installation is preferably done in one of the 2 following ways below. Installation is for cpu only. Virtualenv installtion is for to run the post server only; running jupyter notebooks requires the conda installation.
+This project is run on ubuntu using python 3. Installation is preferably done in one of the 2 following ways below. Installation is for cpu only. Virtualenv installation is just for to run the post server only; running jupyter notebooks requires the conda installation.
 ### 2.1 Conda
 In conda you can replicate environment using: `conda env create -f environment.yml`. The conda environment is in python 3.8
 ### 2.1 Virtualenv
@@ -21,7 +21,7 @@ Use the following commands to create the python environment using virtualenv:
 - `sudo apt-get install python3-opencv`
 - `pip install -r requirements.txt`
 
-`NOTE`-Virtualencv isntallation is for to run the post server only.
+`NOTE`-Virtualenv installation is just for to run the fastapi post server only.
 
 ## 3. File Description
 - `generate_face_pairs.py` - this python script generates positive and negative pairs for face verification using vgg_face_2 test set.
