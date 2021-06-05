@@ -163,5 +163,4 @@ checkpoint
 # xml file
 *.xml
 
-# text files
-*.txt
+/data/**/*.txt
