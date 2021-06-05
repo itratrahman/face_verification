@@ -27,7 +27,7 @@ Use the following commands to create the python environment using virtualenv:
 - `generate_face_pairs.py` - this python script generates positive and negative pairs for face verification using vgg_face_2 test set.
 - `cleanup.sh` - this bash script cleans up the numpy arrays which stores the face pairs.
 - `test_facenet_vgg_test_set.ipynb` - this noteboook tests the performance of facenet on pairs generated from vgg_face_2 test set.
-- `fast_api_server.py` - fasFastAPItapi post server
+- `fast_api_server.py` - fasFastAPI post server
 
 ## 4. Run the FastAPI server
-Use the following command to rung the post server using the following command: `uvicorn fast_api_server:app --host 0.0.0.0 --port 5000`
+The FastAPI server is a post server. Use the following command to rung the post server using the following command: `uvicorn fast_api_server:app --host 0.0.0.0 --port 5000`
