@@ -10,6 +10,7 @@ from keras_facenet import FaceNet
 from fastapi import FastAPI, HTTPException, Query
 from pydantic import BaseModel
 from fastapi.responses import HTMLResponse
+import uvicorn
 from io import BytesIO
 import base64
 
@@ -127,3 +128,6 @@ def predict(data : request_body):
         response["success"] = True
 
     return response
+
+if __name__ == "__main__":
+    uvicorn.run(app, port=5000, host="0.0.0.0")
