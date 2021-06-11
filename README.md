@@ -30,4 +30,4 @@ Use the following commands to create the python environment using virtualenv:
 - `fast_api_server.py` - fasFastAPI post server
 
 ## 4. Run the FastAPI server
-The FastAPI server is a post server. Use the following command to rung the post server using the following command: `uvicorn fast_api_server:app --host 0.0.0.0 --port 5000`
+The FastAPI server is a post server. Use the following command to rung the post server using the following command: `python fast_api_server.py`
