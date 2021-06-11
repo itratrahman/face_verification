@@ -152,5 +152,6 @@ def predict(data : request_body):
 
     return response
 
+# main script which runs the fastapi apps
 if __name__ == "__main__":
     uvicorn.run(app, port=5000, host="0.0.0.0")
